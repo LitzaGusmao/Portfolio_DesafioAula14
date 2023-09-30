@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Qwitcher Grypen', cursive;
+    background-color: #F29E6D;
+    color: #192233;
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F29E6D;
+}
+
+.header_logo {
+    text-align: left;
+    margin-left: 2rem;
+    padding: 0;
+    width: 85px;
+    height: 85px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+}
+
+.featured-products {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.featured-products h2 {
+    font-size: 18px;
+    color: #192233;
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.address{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.mapa {
+    max-width: 100%; /* A imagem terá no máximo a largura do contêiner */
+    display: block; /* Remove margens e alinhamentos automáticos */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    background-color: #F29E6D;
+    color: #192233;
+}
+
+footer p {
+    margin: 0; /* Adicione esta regra para zerar a margem nos elementos <p> do footer */
+}
+
+.footer_paragrafo {
+    color-scheme: #fdfdfd;
+    text-decoration: none;
+    color: #192233;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer a:visited {
+    color: #192233; /* Cor para links visitados */
+}

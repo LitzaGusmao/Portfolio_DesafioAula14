@@ -1,0 +1,228 @@
+html{
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F29E6D;
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Define a posição superior como 0 para fixá-lo no topo */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Define uma elevada ordem de empilhamento para que o cabeçalho fique acima do conteúdo */
+}
+
+.header_logo{
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    width: 5em;
+    height:auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Limpa as margens anteriores */
+    text-align: center; /* Centraliza o texto em telas menores que 48em */
+}
+
+#hamburguer{
+    background-color: #8C1B1B;
+    color: #7AB3BF;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header_nav{
+    background-color: #F29E6D;
+    display: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    letter-spacing: 0.2em;
+}
+
+.header_nav a{
+    color: #192233;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+
+.header_nav a:hover{
+    background-color: #192233;
+    color: #7AB3BF;
+}
+
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.fundo_main{
+    background-image: url(imagens/christmas1.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria-button{
+    text-decoration: none;
+    color: #192233;
+    display: inline-block;
+    background-color: #F29E6D;
+    padding: 1em 1.8em;
+    font-size: 1.5em;
+    border-radius: 8px;
+    letter-spacing: 0.1em;
+}
+
+.galeria-button:hover {
+    color: #7AB3BF; /* Cor do texto ao passar o mouse */
+    background-color: #8C1B1B; /* Cor de fundo ao passar o mouse (se desejar) */
+}
+
+.galeria-button a:visited {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #192233; /* Define a cor desejada */
+    background-color: #F29E6D; /* Define a cor de fundo desejada */
+}
+
+p{
+    margin:0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F29E6D;
+    color: #192233;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5rem; 
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color:  #192233;
+    align-items: center; /* Alinhe verticalmente os ícones sociais */
+    height: 100%; /* Preencha a altura do rodapé */
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 25px;
+    height: 25px;
+ }
+
+.footer_paragrafo{
+    color-scheme: #fdfdfd;
+    text-decoration: none;
+    color:  #192233;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+footer a:visited {
+    color: #192233; /* Cor para links visitados */
+}
+
+
+@media screen and (min-width: 48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F29E6D;
+    }
+
+    .header_logo{
+        text-align: left; /* Alinha à esquerda em telas maiores que 48em */
+        margin-left: 2em; /* Adicione margem à esquerda em telas maiores que 48em */
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: #8C1B1B;
+        color:#7AB3BF;
+    }
+    .footer {
+        flex-direction: row;
+    }
+
+    .header_logo {
+        margin-right: auto; /* Adiciona margem à direita e, portanto, centraliza */
+        display: block; /* Para garantir que a imagem seja tratada como bloco */
+    }
+}
+
+.carousel-item img {
+    max-height: 100vh; /* Define a altura máxima como a altura da viewport (janela do navegador) */
+    width: auto; /* Permite que a largura se ajuste automaticamente para manter a proporção da imagem */
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+div.flex{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}

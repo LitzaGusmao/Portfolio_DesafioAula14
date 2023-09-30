@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Aula 14</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagens/arvore-de-natal2.png" type="image/x-icon">
+    <script src="js_Localizacao.js"></script>   
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY_AQUI&callback=initMap" async defer></script>   
+</head>
+
+<body>
+    <header class="header">
+        <img src="imagens/merry-christmas.png" alt="" class="header_logo">
+        <span id="hamburguer" class="material-symbols-rounded">menu</span>
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="index_Produtos.html" target="_blank">Produtos</a></li>
+                <li><a href="index_Localizacao.html" target="_blank">Localização</a></li>
+                <li><a href="index_contato.html" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer(){
+            if(itensMenu.style.display == 'block'){
+                itensMenu.classList.remove('show');
+            }else{
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+<main>
+    <section class="fundo_main">
+        <div class="galeria">
+            <a href="index_Desafio_23.08.23_p2.html" target="_blank" class="galeria-button">Galeria</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="social-icon">
+            <a href="https://www.instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="social-icon">
+            <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+        <div class="social-icon">
+            <a href="https://br.linkedin.com" target="_blank"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="social-icon">
+            <a href="https://pt-br.facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="social-icon">
+            <a href="https://github.com" target="_blank"><img src="imagens/github.png" alt="GitHub"></a>
+        </div>
+    </div>
+    <p><a href="https://jabrasil.org.br/elasnatech23/" target="_blank" class="footer_paragrafo">&hearts; Elas na Tech 2023 &hearts;</a></p>
+    
+</footer>
+
+</body>
+
+</html>
